@@ -1,0 +1,758 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url('images/background.jpg');
+    background-size: contain;
+}
+
+a{
+    cursor: pointer;
+}
+
+.primary-color{
+    color: #ec1f24;
+}
+
+.secondary-color{
+    color:#2d3192;
+}
+
+.font-family{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: #22256E;
+    text-align: center;
+    font-weight: 600;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+button.close{ /*For Modal Close*/
+    color: #2d3192;
+    opacity: 1;
+}
+
+.modal-body .card, .modal-body .card img{
+    width: 100%;
+    margin-top:5px;
+} 
+
+.card-title{
+    text-align: center;
+    /* white-space: nowrap; */
+    color: #ec1f24;
+}
+
+.modal .card-title{
+    color: #ec1f24;
+    font-weight: 600;
+}
+
+.overlapping-fonts{
+    font-size: 23.7px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw !important;
+}
+
+/* .horizontal-line{
+    border-top: 2px dashed #2d3192;
+} */
+
+/* Free Pickup and Drop for Mobile and Tablet View */
+.free-pickup-mobile-view{
+    display: none;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    animation: zoominout 2s infinite;
+    -webkit-animation: zoominout 2s infinite;
+}
+.free-pickup-mobile-view a{
+    font-weight: 600;
+    color: #ec1f24;
+    text-decoration: none;
+}
+.free-pickup-mobile-view a i{
+    color:#2d3192;
+}
+
+
+/* Navbar */
+
+.navbar,.dropdown-menu{
+    background-color: #2d3192;
+}
+
+.navbar a, .dropdown-item{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar-brand>img{
+    width:50px;
+    height: 50px;
+}
+
+.navbar-toggler{
+    background-color: #ec1f24;
+}
+
+.navbar-toggler .fa-bars,.navbar-toggler .fa-times{
+    color: white;
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.navbar-nav li{
+    margin-right: 5px;
+}
+
+.navbar-nav li:hover{
+    background-color: white;
+}
+
+.navbar-nav li>a:hover{
+    color: #2d3192;
+    font-weight: 600;
+}
+
+.navbar-nav i{
+    color: #ec1f24;
+    font-size: 1.25em;
+}
+
+.free-pickup-navbar-laptop-view{
+    animation: zoominout 2s infinite;
+    -webkit-animation: zoominout 2s infinite;
+}
+
+@keyframes zoominout{
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+        -webkit-transform: scale(1.1,1.1);
+        -moz-transform: scale(1.1,1.1);
+        -ms-transform: scale(1.1,1.1);
+        -o-transform: scale(1.1,1.1);
+}
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+/* Carousel */
+
+
+
+/* About Us ,Customers h3 also here */
+.about-us{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about-us h3,.customers h3{
+    color: #22256E;
+    text-align: center;
+}
+.about-us p{
+    text-align: center;
+}
+
+/* Expertise / Team */
+
+/* .expertise-row1,.expertise-row2{
+    margin-top: 20px;
+} */
+
+.expertise-row1 .card,.expertise-row2 .card, .team-row .card{
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.expertise-row1 .card:hover,.expertise-row2 .card:hover, .team-row .card:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.general-servicing-ul {
+    list-style: none; /* Remove default bullets */
+}
+  
+.general-servicing-ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color:#ec1f24; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.team-row .card-title{
+    font-weight: 600;
+}
+
+.expertise-row2{
+    justify-content: center;
+}
+
+.expertise-row1 .card-img-top, .expertise-row2 .card-img-top {
+    object-fit: cover;
+}
+
+.expertise .modal .card-img-top, .team-row .card-img-top, .team .modal .card-img-top{
+    object-fit: contain;
+}
+
+.tenpxmargin{
+    margin-top:10px;
+}
+
+/* Customers */
+.customers .card .card-text{
+    font-style: italic;
+}
+.customers .card span{
+    color: #ec1f24;
+    float: right;
+    font-weight: 600;
+}
+
+/*SpeedoMeter*/
+.background-half-round {
+    width: 300px;
+    height: 150px;
+    background: #232323;
+    margin: auto;
+    border-radius: 300px 300px 0 0;
+    border: 10px solid #ec1f24;
+    border-bottom: 0;
+    box-shadow: inset 0 2px 5px #151515;
+    position: relative;
+  }
+  
+  .background-half-round:after {
+    content: "";
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    background: #2f2f2f;
+    display: block;
+    top: auto;
+    bottom: 0;
+    border-radius: 50px 50px 0 0;
+    box-shadow: inset 0px 3px 5px 0px #151515;
+    z-index: 5;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  
+  .speed-number-wapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .speed-number {
+    color: #fff;
+    font-family: "Roboto";
+  }
+  .speed-number span:after {
+    content: "";
+    width: 2px;
+    height: 5px;
+    background: #fff;
+    position: relative;
+  }
+  
+  .speed-0,
+  .speed-20,
+  .speed-40,
+  .speed-80,
+  .speed-100,
+  .speed-120 {
+    position: absolute;
+    bottom: 0;
+    font-weight:bold;
+    font-size: 20px;
+    /* width: 50%; */
+  }
+
+  .speed-0{
+      width:0%;
+  }
+
+  .speed-0 span {
+    padding: 0px 0px 0px 5px;
+  }
+  
+  .speed-20 {
+    transform: rotate(30deg);
+    transform-origin: 100% 0%;
+    width:25%;
+    height: 48%;
+  }
+  
+  .speed-20 span {
+    transform: rotate(-30deg);
+    display: inline-block;
+    padding: 15px 0px 0px 15px;
+  }
+  
+  .speed-40 {
+    transform: rotate(60deg);
+    transform-origin: 100% 0%;
+    width:37%;
+    height: 45%;
+  }
+  .speed-40 span {
+    transform: rotate(-60deg);
+    display: inline-block;
+    padding: 0px 0px 0px 20px;
+  }
+  
+  .speed-60 {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .speed-80 {
+    transform: rotate(120deg);
+    transform-origin: 100% 0%;
+    width:62%;
+    height: 13%;
+  }
+  
+  .speed-80 span {
+    transform: rotate(-120deg);
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+  }
+  
+  .speed-100 {
+    transform: rotate(150deg);
+    transform-origin: 100% 25%;
+    width:61%;
+    height: 0%;
+  }
+  
+  .speed-100 span {
+    transform: rotate(-150deg);
+    display: inline-block;
+    padding: 0px 15px 0px 15px;
+  }
+  
+  .speed-120 {
+    transform: rotate(180deg);
+    transform-origin: 100% 50%;
+  }
+  
+  .speed-120 span {
+    transform: rotate(-180deg);
+    display: inline-block;
+    padding: 0px 5px 0px 0px;
+    color: #ff4141;
+    font-weight: bold;
+  }
+  
+  .pointer {
+    background: #ffa500;
+    /* background:#ff4141; */
+    width: 5px;
+    height: 120px;
+    border-radius: 10px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /*IE 9*/
+    -ms-transform-orgin: 50% 100%; /*IE 9*/
+    -webkit-transform: rotate(-90deg); /*safari 3-8*/
+    -webkit-transform-orgin: 50% 100%; /*safari 3-8*/
+    margin: auto;
+    transform-origin: 50% 100%;
+  }
+  
+  .speed-ani {
+    animation: speeding  3s infinite ;
+    -webkit-animation: speeding  3s infinite ;
+}
+  
+  @keyframes speeding {
+    0% {
+      transform: rotate(-90deg);
+    }
+    5% {
+      transform: rotate(-85deg);
+    }
+    /* 90% {
+      transform: rotate(77deg);
+      -webkit-transform: rotate(77deg);
+      -moz-transform: rotate(77deg);
+      -ms-transform: rotate(77deg);
+      -o-transform: rotate(77deg);
+    } */
+    /* 90% {
+      transform: rotate(80deg);
+    }
+    95% {
+      transform: rotate(90deg);
+    }
+    97% {
+      transform: rotate(90deg);
+    } */
+    100% {
+      transform: rotate(85deg);
+      -webkit-transform: rotate(85deg);
+      -moz-transform: rotate(85deg);
+      -ms-transform: rotate(85deg);
+      -o-transform: rotate(85deg);
+    }
+  }
+
+
+.cars-serviced-and-happy-customers .row{
+    text-align: center;
+}
+
+.cars-serviced-and-happy-customers .counter{
+    font-size: 60px;
+    font-weight:600;
+    color: #ec1f24;
+}
+
+/* FAQs */
+#faqModal .modal-header{
+    padding: .5rem .5rem;
+    border-bottom: 0;
+}
+
+#faqModal .modal-header .modal-title{
+    margin-left: auto;
+    font-weight: 600;
+    color: #22256E;
+}
+
+#faqModal .card-header{
+    padding : 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #f04c50;
+    color: white;
+}
+#faqModal .card-body{
+    padding : 0.75rem;
+    font-size: 14px;
+}
+
+
+/*owlcarousel*/
+.aligner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-nav{
+    display: none !important;
+}
+
+.owl-dots {
+    margin-top: 10px !important;
+}
+.owl-dots .owl-dot.active span{
+    background: #22256E !important;
+}
+
+.owl-dots .owl-dot span:hover{
+    background: #22256E !important;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #2d3192;
+    padding: 20px 20px 10px 20px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.footer h5{
+    font-weight: 600;
+}
+
+.footer a,.footer p{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer i{
+    color:#f04c50;
+}
+
+.footer .place-card{
+    width: 115px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-size: auto !important;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem !important;
+    }
+    .card-img-top {
+        width: 100%;
+        height: auto !important;
+    }
+    .modal-body .card img{
+        margin-top:0px;
+    }
+    /* Free Pickup and Drop */
+    .free-pickup-mobile-view{
+        display: block;
+    }
+    .free-pickup-navbar-laptop-view{
+        display: none;
+    }
+
+    /* About us */
+    .about-us{
+        margin-top: 15px;
+    }
+    .about-us p{
+        text-align: left;
+        font-size: 13px;
+    }
+
+    /* Expertise */
+    /* .expertise-row1,.expertise-row2{
+        margin-top: 0px;
+    } */
+    .row{
+        margin-top: 0px;
+    }
+    .expertise-row1 .card,
+    .expertise-row2 .card,
+    .team-row .card,
+    .customers-row1 .card,
+    .customers-row2 .card,
+    .b2bcustomersrow1,
+    .cars-serviced-and-happy-customers .col-lg-6{
+        margin-top: 20px;
+    }
+    .tenpxmargin{
+        margin-top:0px;
+    }
+
+    /* Customers */
+    .b2bcustomers .row img{
+        width: 40%;
+    }
+    .happy-customer-speedometer{
+        margin-top:20px;
+    }
+
+    /* Footer */
+    .footer .col-xs-12{
+        margin-top: 15px;
+    }
+
+    }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width:767px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem !important;
+    }
+    /* Free Pickup and Drop */
+    .free-pickup-mobile-view{
+        display: block;
+    }
+    .free-pickup-navbar-laptop-view{
+        display: none;
+    }
+
+    /* About us */
+    .about-us{
+        margin-top: 20px;
+    }
+    .about-us p{
+        text-align: left;
+        font-size: 15px;
+    }
+
+    /* Expertise */
+    /* .expertise-row1,.expertise-row2{
+        margin-top: 0px;
+    } */
+    .row{
+        margin-top: 0px;
+    }
+    .expertise-row1 .card,
+    .expertise-row2 .card,
+    .team-row .card,
+    .customers-row1 .card,
+    .customers-row2 .card,
+    .b2bcustomersrow1{
+        margin-top: 20px;
+    }
+
+    /* Customers */
+    .b2bcustomers .row img{
+        width: 40%;
+    }
+
+    /* Footer */
+    .footer .col-sm-4{
+        margin-top: 20px;
+    }
+    
+
+    }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width:991px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.2rem !important;
+    }
+    /* Free Pickup and Drop */
+    .free-pickup-mobile-view{
+        display: block;
+    }
+    .free-pickup-navbar-laptop-view{
+        display: none;
+    }
+
+    /* About us */
+    .about-us{
+        margin-top: 25px;
+    }
+    .about-us p{
+        text-align: left;
+        font-weight: 15px;
+    }
+
+    /* Expertise */
+    /* .expertise-row1,.expertise-row2{
+        margin-top: 0px;
+    } */
+    .row .card{
+        height: 93%;
+    }
+    .customers .card{
+        height: auto !important;
+    }    
+    .row{
+        margin-top: 0px;
+    }
+    .expertise-row1 .card,
+    .expertise-row2 .card,
+    .team-row .card,
+    .customers-row1 .card,
+    .customers-row2 .card,
+    .b2bcustomersrow1{
+        margin-top: 20px;
+    }
+
+    /* Customers */
+    .b2bcustomers .row img{
+        width: 40%;
+    }
+
+    /*Footer*/
+    .email-footer{
+        word-break: break-all;
+    }
+
+    } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width:1199px){
+
+    /* About us */
+    .about-us{
+        margin-top: 30px;
+    }
+
+    /* Expertise */
+    /* .expertise-row1,.expertise-row2{
+        margin-top: 0px;
+    } */
+    .row .card{
+        height: 93%;
+    }
+    .customers .card{
+        height: auto !important;
+    }
+    .row{
+        margin-top: 0px;
+    }
+    .expertise-row1 .card,
+    .expertise-row2 .card,
+    .team-row .card,
+    .customers-row1 .card,
+    .customers-row2 .card,
+    .b2bcustomersrow1{
+        margin-top: 20px;
+    }
+    
+    } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+    }
